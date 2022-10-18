@@ -40,15 +40,19 @@ svg {
   transition: all 0.3s ease;
 }
 .title__h4 {
-  font-size: 12rem;
-  font-weight: 500;
-  letter-spacing: -5px;
+  font-size: 11rem;
+  font-weight: 400;
+  letter-spacing: 10px;
   transition: all 0.3s ease;
-  font-family: "Righteous", cursive;
+  font-family: "Poppins", sans-serif;
+}
+.title__h4--lh {
+  line-height: 0.8;
 }
 .title__h5 {
   font-size: 30rem;
-  font-family: "Righteous", cursive;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(
     90deg,
     rgba(126, 126, 238, 1) 0%,
@@ -58,6 +62,13 @@ svg {
   color: transparent;
   letter-spacing: -15px;
   text-align: center;
+}
+.title__h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #919192;
+  font-family: "Poppins", sans-serif;
 }
 .parragraf {
   font-size: 1.5rem;
@@ -186,6 +197,9 @@ header {
   font-size: 3.4rem;
   margin: auto;
 }
+
+.card__team {
+}
 /* TARJETAS */
 
 /* BOTONES */
@@ -267,5 +281,17 @@ header {
 }
 .dates__est__item {
   text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.dates__est__item--mgrT-30 {
+  margin-top: 30px;
+}
+.dates__est__item--border {
+  border-bottom: 1px solid #ccc;
 }
 /* DATOS */
+
+/* TEAM */
+
+/* TEAM */
