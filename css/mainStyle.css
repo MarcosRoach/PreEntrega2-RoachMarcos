@@ -196,10 +196,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* .card__shadow:hover {
-  cursor: pointer;
-  box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.3);
-} */
+
 .card__shadow hr {
   width: 70px;
   margin: 20px auto;
@@ -215,12 +212,7 @@ header {
   transform: rotate(20deg);
   transition: all 0.3s ease;
 }
-/* .card__shadow:hover > .card__shadow__bgIcon {
-  transform: rotate(0deg);
-}
-.card__shadow:hover > .title__h3 {
-  color: rgb(62, 65, 219);
-} */
+
 .card__shadow i {
   position: absolute;
   left: 44%;
@@ -233,14 +225,13 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  transition: all 0.3s ease;
 }
 .card__team img {
   filter: grayscale(1);
+  transition: all 0.3s ease;
 }
-/* .card__team:hover > img {
-  cursor: pointer;
-  filter: grayscale(0);
-} */
+
 .card__team__overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -249,10 +240,9 @@ header {
   color: white;
   overflow: hidden;
   width: 65%;
+  transition: all 0.3s ease;
 }
-/* .card__team:hover > .card__team__overlay {
-  width: 75%;
-} */
+
 .card__team__overlay h4 {
   font-size: 2.2rem;
   font-weight: 700;
@@ -308,14 +298,6 @@ header {
   transform: scale(0.1, 1);
   z-index: -1;
 }
-/* .butn-one:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
-}
-.butn-one:hover::after {
-  transform: scale(1, 0.1);
-  opacity: 0;
-} */
 /* BOTONES */
 
 /* SERVICES */
@@ -417,12 +399,10 @@ footer {
 .footer__social a {
   color: white;
   font-size: 3rem;
+  transition: all 0.3s ease;
 }
 .footer__copy p {
   margin-bottom: 0;
-}
-.tt {
-  justify-content: space-around;
 }
 /* FOOTER */
 
@@ -560,6 +540,37 @@ footer {
     text-align: center;
     width: 80%;
     margin: 0 auto;
+  }
+  .footer__inf {
+    width: 80%;
+  }
+  .card__shadow:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.3);
+  }
+  .card__shadow:hover > .card__shadow__bgIcon {
+    transform: rotate(0deg);
+  }
+  .card__shadow:hover > .title__h3 {
+    color: rgb(62, 65, 219);
+  }
+  .card__team:hover > img {
+    cursor: pointer;
+    filter: grayscale(0);
+  }
+  .card__team:hover > .card__team__overlay {
+    width: 75%;
+  }
+  .butn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  .butn-one:hover::after {
+    transform: scale(1, 0.1);
+    opacity: 0;
+  }
+  .footer__social a:hover {
+    color: rgba(126, 126, 238, 1);
   }
 }
 /* PANTALLAS GRANDES */
