@@ -66,6 +66,7 @@ svg {
     rgba(82, 6, 157, 1) 100%
   );
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   letter-spacing: -15px;
   text-align: center;
