@@ -26,6 +26,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -40,7 +44,7 @@
   <body>
     <div id="landscape">
       <div>
-        <img src="img/girar-movil.png" alt="" class="img-fluid" />
+        <img src="../img/girar-movil.png" alt="" class="img-fluid" />
         <p>!Gira el Movil!</p>
       </div>
     </div>
@@ -97,37 +101,262 @@
       <section class="experience mgt-60">
         <div class="container">
           <div class="row">
-            <div class="experiencie__img col-12">
+            <div class="experiencie__img col-12 col-lg-6">
               <img
                 src="../img/nosotros.jpg"
                 alt="Mujer con laptop"
                 class="img-fluid"
               />
             </div>
-            <div class="experience__dat col-12">
+            <div class="experience__dat col-12 col-lg-6">
               <div>
-                <h2>Porque Elegirnos</h2>
-                <p class="experience__dat__text">
+                <h2 class="title__h2 text-center mgt-60">Porque Elegirnos</h2>
+                <p class="parragraf mgt-30">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Distinctio quibusdam inventore labore saepe. Labore architecto
                   commodi quod assumenda, maxime nulla eaque ab! Esse eveniet id
                   dolor molestias consequatur soluta alias!
                 </p>
               </div>
-              <div class="experience__skills">
-                <div class="experience__skills__item">
-                  <p>APLICACIONES DE WINDOWS</p>
-                  <div class="experience__skills__item__bar --win">79%</div>
+              <div class="experience__skills mgt-30">
+                <p>APLICACIONES DE WINDOWS</p>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    style="width: 79%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    79%
+                  </div>
                 </div>
-                <div class="experience__skills__item">
-                  <p>IOS/MAC OS APPS</p>
-                  <div class="experience__skills__item__bar --ios">72%</div>
+                <p>IOS/MAC OS APPS</p>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    style="width: 72%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    72%
+                  </div>
                 </div>
-                <div class="experience__skills__item">
-                  <p>ANDROID APPS</p>
-                  <div class="experience__skills__item__bar --android">88%</div>
+                <p>ANDROID APPS</p>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    style="width: 88%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    88%
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="opinions mgt-60">
+        <div class="container">
+          <h2 class="title__h2 text-center">Opiniones</h2>
+
+          <div class="row corusel">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel carousel-dark slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="opinion__card col-12">
+                    <div class="card__shadow">
+                      <img
+                        src="../img/opiniones/usuario1.jpg"
+                        alt="Usuario 1"
+                        class="img-responsive rounded-circle"
+                      />
+
+                      <div class="opinion__card__paragraph mt-5">
+                        <p class="ps-3 pe-3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Asperiores laudantium in quidem. Totam expedita
+                          incidunt iure iste? Obcaecati suscipit iusto molestiae
+                          earum consequuntur soluta qui at totam deserunt
+                          distinctio? Possimus.
+                        </p>
+                      </div>
+
+                      <h3>Nadia Grosso</h3>
+                      <h4>Cliente Regular</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="opinion__card col-12">
+                    <div class="card__shadow">
+                      <img
+                        src="../img/opiniones/usuario2.jpg"
+                        alt="Usuario 1"
+                        class="img-responsive rounded-circle"
+                      />
+
+                      <div class="opinion__card__paragraph mt-5">
+                        <p class="ps-3 pe-3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Asperiores laudantium in quidem. Totam expedita
+                          incidunt iure iste? Obcaecati suscipit iusto molestiae
+                          earum consequuntur soluta qui at totam deserunt
+                          distinctio? Possimus.
+                        </p>
+                      </div>
+
+                      <h3>Nadia Grosso</h3>
+                      <h4>Cliente Regular</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="opinion__card col-12">
+                    <div class="card__shadow">
+                      <img
+                        src="../img/opiniones/usuario3.jpg"
+                        alt="Usuario 1"
+                        class="img-responsive rounded-circle"
+                      />
+
+                      <div class="opinion__card__paragraph mt-5">
+                        <p class="ps-3 pe-3">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Asperiores laudantium in quidem. Totam expedita
+                          incidunt iure iste? Obcaecati suscipit iusto molestiae
+                          earum consequuntur soluta qui at totam deserunt
+                          distinctio? Possimus.
+                        </p>
+                      </div>
+
+                      <h3>Nadia Grosso</h3>
+                      <h4>Cliente Regular</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="backFix --backFix__v2 statistics">
+        <div class="container pt-5 pb-5">
+          <div class="row">
+            <div class="statistics__item text-center col-12 col-md-6 col-lg-3">
+              <h2>200</h2>
+              <h3>APPS DESARROLLADAS</h3>
+              <div class="divider"></div>
+            </div>
+            <div class="statistics__item text-center col-12 col-md-6 col-lg-3">
+              <h2>40</h2>
+              <h3>CONSULTORIAS</h3>
+              <div class="divider"></div>
+            </div>
+            <div class="statistics__item text-center col-12 col-md-6 col-lg-3">
+              <h2>12</h2>
+              <h3>PREMIOS GANADOS</h3>
+              <div class="divider"></div>
+            </div>
+            <div class="statistics__item text-center col-12 col-md-6 col-lg-3">
+              <h2>160</h2>
+              <h3>EMPLEADOS</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customers mgt-30 mgb-30">
+        <div class="container">
+          <h2 class="title__h2 text-center">Clientes</h2>
+          <div class="row">
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli1.png" alt="" />
+            </div>
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli2.png" alt="" />
+            </div>
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli3.png" alt="" />
+            </div>
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli4.png" alt="" />
+            </div>
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli5.png" alt="" />
+            </div>
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli6.png" alt="" />
+            </div>
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli7.png" alt="" />
+            </div>
+            <div class="customers__item col-12 col-md-4">
+              <img src="../img/clientes/cli8.png" alt="" />
             </div>
           </div>
         </div>
@@ -194,13 +423,13 @@
         </div>
       </div>
     </footer>
-  </body>
 
-  <!-- JS -->
-  <!-- Bootstrap -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-  ></script>
+    <!-- JS -->
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

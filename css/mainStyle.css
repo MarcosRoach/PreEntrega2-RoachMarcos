@@ -130,7 +130,7 @@ svg {
 header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 999;
   height: 80px;
 }
 /* HEADER */
@@ -258,6 +258,44 @@ header {
   font-size: 1.6rem;
   padding-left: 10px;
   font-weight: 500;
+}
+.opinion__card__paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: justify;
+  color: rgb(121, 119, 119);
+  margin-bottom: 0;
+}
+.opinion__card h3 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: rgb(88, 87, 87);
+}
+.opinion__card h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #756aee;
+}
+.opinion__card__paragraph::before {
+  display: block;
+  text-align: left;
+  top: 400px;
+  content: '"';
+  font-size: 6rem;
+  color: #7e42ff;
+  font-weight: 400;
+  font-family: "Passion One", cursive;
+  line-height: 3px;
+}
+.opinion__card__paragraph::after {
+  display: block;
+  text-align: right;
+  top: 4px;
+  content: '"';
+  font-size: 6rem;
+  color: #7e42ff;
+  font-weight: 400;
+  font-family: "Passion One", cursive;
 }
 /* TARJETAS */
 
