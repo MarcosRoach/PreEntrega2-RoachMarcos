@@ -1,0 +1,80 @@
+/* JUMBO */
+.jumbo {
+  background-image: url("../img/jumbo/jumbo-nosotros.jpg");
+}
+.jumbo--height {
+  height: 40vh;
+}
+/* JUMBO */
+
+/* TARJETA */
+.card__contact__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(199, 195, 195);
+  padding-top: 20%;
+  padding-bottom: 20%;
+  box-shadow: 0 0 13px -4px rgb(0 0 0 / 17%);
+  transition: all 0.3s ease;
+  min-height: 325px;
+}
+.card__contact__item i {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  color: blueviolet;
+}
+.card__contact__item h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+/* TARJETA */
+
+/* FORM */
+.form__control {
+  width: 100%;
+  padding: 20px 2px;
+  background-color: rgb(228, 222, 222);
+  border: none;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+::placeholder {
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+form textarea {
+  margin-top: 20px;
+  width: 100%;
+}
+.butn {
+  color: white !important;
+}
+/* FORM */
+
+/* MAP */
+.map {
+  width: 100%;
+}
+.map iframe {
+  width: 100%;
+  height: 300px;
+  filter: grayscale(1);
+}
+/* MAP */
+
+/* TABLETS */
+@media (min-width: 768px) and (orientation: portrait) {
+}
+/* TABLETS */
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1024px) {
+  .card__contact__item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.3);
+  }
+}
+/* PANTALLAS GRANDES */

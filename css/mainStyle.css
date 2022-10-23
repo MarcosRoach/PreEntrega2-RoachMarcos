@@ -406,15 +406,18 @@ header {
 
 /* FOOTER */
 footer {
-  background-color: rgb(10 10 10);
   color: white;
 }
 .footer {
   flex-direction: row;
 }
 .footer__top {
-  background-color: #1a1a1a;
+  background-color: #0c0c0c;
 }
+.footer__inf {
+  background-color: #050505;
+}
+
 .footer__img img {
   width: 240px;
   padding: 0 20px 0px;
@@ -451,7 +454,8 @@ footer {
 /* FOOTER */
 
 /* SOLO PORTRAIT */
-/* @media (max-width: 767px) and (orientation: landscape) {
+
+@media (max-width: 1200px) and (orientation: landscape) {
   #landscape {
     display: flex;
     position: fixed;
@@ -472,7 +476,14 @@ footer {
     width: 80px;
   }
 }
-@media (min-width: 768px) and (orientation: landscape) {
+
+@media (min-width: 1024px) and (orientation: portrait) {
+  #landscape {
+    display: none;
+    z-index: -100;
+  }
+}
+/* @media (max-width: 1023px) and (orientation: landscape) {
   #landscape {
     display: flex;
     position: fixed;
@@ -492,7 +503,15 @@ footer {
   #landscape img {
     width: 80px;
   }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  #landscape {
+    display: none;
+    z-index: -100;
+  }
 } */
+
 /* SOLO PORTRAIT */
 
 /* TABLETS */

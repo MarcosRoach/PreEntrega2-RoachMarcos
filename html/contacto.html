@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
     <!-- css -->
     <link rel="stylesheet" href="../css/mainStyle.css" />
-    <link rel="stylesheet" href="../css/preciosStyle.css" />
+    <link rel="stylesheet" href="../css/contactoStyle.css" />
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -76,13 +76,13 @@
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="precios.html">Precios</a>
+                <a class="nav-link" href="precios.html">Precios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="galeria.html">Galeria</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -93,74 +93,101 @@
     <main>
       <section class="jumbo jumbo--height">
         <div class="jumbo__cont">
-          <h1 class="text-center title__h1 mx-3 mb-5">Precios</h1>
-          <h2 class="text-center title__duo">HOME <span>/ PRECIOS</span></h2>
+          <h1 class="text-center title__h1 mx-3 mb-5">Contacto</h1>
+          <h2 class="text-center title__duo">HOME <span>/ CONTACTO</span></h2>
         </div>
       </section>
 
-      <section class="prices mgt-60 mgb-60">
+      <section class="card__contact mgt-60 mgb-60">
         <div class="container">
-          <div class="row gy-5 justify-content-center">
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="prices__card">
-                <h3>BASIC</h3>
-                <h2>$5.000</h2>
-                <h4>PLAN INICIAL</h4>
-                <div class="prices__card__divider"></div>
-                <ul class="prices__card__list">
-                  <li class="--active">Desarrollo de APPS</li>
-                  <li class="--active">Diseño de interfaz de usuario</li>
-                  <li>Gestión de la configuración</li>
-                  <li>Seguimiento de la calidad del software</li>
-                  <li>Integración de aplicaciones</li>
-                </ul>
-                <div class="prices__card__button">
-                  <a class="prices__card__button__a" href="#">CONTRATAR</a>
-                </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card__contact__item">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>+54 (353) 4526949</h3>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="prices__card">
-                <h3>MEDIUM</h3>
-                <h2>$8.000</h2>
-                <h4>PLAN INTERMEDIO</h4>
-                <div class="prices__card__divider"></div>
-                <ul class="prices__card__list">
-                  <li class="--active">Desarrollo de APPS</li>
-                  <li class="--active">Diseño de interfaz de usuario</li>
-                  <li class="--active">Gestión de la configuración</li>
-                  <li class="--active">
-                    Seguimiento de la calidad del software
-                  </li>
-                  <li>Integración de aplicaciones</li>
-                </ul>
-                <div class="prices__card__button">
-                  <a class="prices__card__button__a" href="#">CONTRATAR</a>
-                </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card__contact__item">
+                <i class="fa-solid fa-house"></i>
+                <h3>Verbenas 348</h3>
+                <h3>Villa Nueva - Cordoba</h3>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="prices__card">
-                <h3>PREMIUM</h3>
-                <h2>$15.000</h2>
-                <h4>PLAN SUPERIOR</h4>
-                <div class="prices__card__divider"></div>
-                <ul class="prices__card__list">
-                  <li class="--active">Desarrollo de APPS</li>
-                  <li class="--active">Diseño de interfaz de usuario</li>
-                  <li class="--active">Gestión de la configuración</li>
-                  <li class="--active">
-                    Seguimiento de la calidad del software
-                  </li>
-                  <li class="--active">Integración de aplicaciones</li>
-                </ul>
-                <div class="prices__card__button">
-                  <a class="prices__card__button__a" href="#">CONTRATAR</a>
-                </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card__contact__item">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>info@centenialsoft.com</h3>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="title container mgt-60 mgb-30">
+        <div class="row">
+          <h1 class="title__h1 text-center">Póngase en contacto</h1>
+          <p class="parragraf text-center">
+            Si tiene alguna pregunta, solo complete el formulario de contacto y
+            le responderemos a la brevedad.
+          </p>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="container">
+          <form class="row gy-5">
+            <div class="col-12 col-lg-4">
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+                class="form__control"
+              />
+            </div>
+            <div class="col-12 col-lg-4">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="form__control"
+              />
+            </div>
+            <div class="col-12 col-lg-4">
+              <input
+                type="number"
+                name="telefono"
+                id="telefono"
+                placeholder="Telefono"
+                class="form__control"
+              />
+            </div>
+            <div class="col-12">
+              <textarea
+                rows="10"
+                name="mensaje"
+                id="mensaje"
+                placeholder="Mensaje"
+                class="form__control col-12"
+              ></textarea>
+            </div>
+          </form>
+          <div class="mb-5">
+            <a href="" class="butn butn-one">Enviar Mensaje</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8010.819319624281!2d-63.24255593786293!3d-32.41555178942041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1664818397905!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
 
