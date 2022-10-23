@@ -84,6 +84,11 @@
     padding: 40px 60px;
   }
   /* ESTADISTICAS */
+  /* CUSTOMERS */
+  .customers .customers__item {
+    border-bottom: 0;
+  }
+  /* CUSTOMERS */
 }
 /* TABLETS */
 
@@ -102,7 +107,11 @@
   .statistics .divider {
     border-bottom: 0;
   }
-
   /* ESTADISTICAS */
+  /* CUSTOMERS */
+  .customers .customers__item {
+    border-bottom: 0;
+  }
+  /* CUSTOMERS */
 }
 /* PANTALLAS GRANDES */
