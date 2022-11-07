@@ -1,0 +1,61 @@
+.butn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  min-width: 200px;
+  padding: 17px 33px 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.34;
+  border: 2px solid;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: $color-princ;
+  border-color: $color-princ;
+  transition: all 0.3s;
+  z-index: 10;
+
+  a {
+    color: $color_white;
+  }
+}
+
+.butn::before,
+.butn::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.butn-one::before {
+  opacity: 0;
+  background: $color-black;
+  transform: scale(0.1, 1);
+  z-index: -1;
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (orientation: portrait) {
+}
+/* TABLETS */
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1024px) {
+  .butn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  .butn-one:hover::after {
+    transform: scale(1, 0.1);
+    opacity: 0;
+  }
+}
+/* PANTALLAS GRANDES */

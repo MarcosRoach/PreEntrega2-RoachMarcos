@@ -1,0 +1,70 @@
+.title__h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+.title__h2 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+.title__h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease;
+}
+.title__h4 {
+  font-size: 11rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+  transition: all 0.3s ease;
+  font-family: $font-second;
+}
+.title__h4--lh {
+  line-height: 0.8;
+}
+.title__h5 {
+  font-size: 30rem;
+  font-weight: 600;
+  font-family: $font-second;
+  background: linear-gradient(90deg, $color-princ 0%, $color-second 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -15px;
+  text-align: center;
+}
+.title__h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: $color-lightGray;
+  font-family: $font-second;
+}
+.title__duo {
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+.title__duo span {
+  color: $color-lightGray;
+}
+.parragraf {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: $color-gray;
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (orientation: portrait) {
+  .title__h5 {
+    font-size: 36rem;
+  }
+}
+/* TABLETS */
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1024px) {
+}
+/* PANTALLAS GRANDES */

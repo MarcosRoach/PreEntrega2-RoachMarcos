@@ -1,0 +1,133 @@
+/* EXPERIENCIA */
+.experience {
+  .experiencie__img {
+    display: flex;
+    justify-content: center;
+  }
+  .experience__dat {
+    .title__h2 {
+      color: $color-lightGray;
+      font-weight: 500;
+    }
+
+    .experience__skills {
+      p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $color-gray;
+      }
+      .progress-bar {
+        text-align: right;
+        background-color: $color-princ;
+      }
+    }
+  }
+}
+/* EXPERIENCIA */
+
+/* OPINIONES */
+.opinions {
+  .carousel-item {
+    padding: 40px 10px;
+
+    .card__shadow {
+      padding: 40px 20px;
+    }
+  }
+}
+/* OPINIONES */
+
+/* ESTADISTICAS */
+.--backFix__v2 {
+  background-image: url("../img/bg-counter.jpg");
+  height: auto;
+}
+.statistics {
+  .row {
+    justify-content: center;
+    align-items: center;
+  }
+  .statistics__item {
+    h2 {
+      font-family: $font-second;
+      font-size: 7rem;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .divider {
+      border-bottom: 1px solid $color-lightGray;
+    }
+  }
+}
+/* ESTADISTICAS */
+
+/* CUSTOMERS */
+.customers {
+  .row .col-12 {
+    justify-content: center;
+  }
+  .customers__item {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $color-lightGray;
+  }
+}
+
+/* CUSTOMERS */
+
+/* TABLETS */
+@media (min-width: 768px) and (orientation: portrait) {
+  .opinions {
+    .card__shadow {
+      padding: 40px 60px;
+    }
+  }
+
+  .statistics {
+    .statistics__item {
+      .divider {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .customers {
+    .customers__item {
+      border-bottom: 0;
+    }
+  }
+}
+/* TABLETS */
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1024px) {
+  .opinions {
+    .card__shadow {
+      padding: 40px 60px;
+    }
+  }
+
+  .statistics {
+    .row {
+      align-items: center;
+      height: 300px;
+    }
+    .statistics__item {
+      .divider {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .customers {
+    .customers__item {
+      border-bottom: 0;
+    }
+  }
+}
+/* PANTALLAS GRANDES */

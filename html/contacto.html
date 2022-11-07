@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta
+      name="description"
+      content="Empresa dedicada al desarrollo de APPS y mantenimiento de redes de TI tanto en nube como on-premise"
+    />
+    <meta
+      name="keywords"
+      content="APPS, DESARROLLO, PROGRAMACION, TI, NUBE, ON PREMISE, SOFTWARE"
+    />
+
     <!-- favicon -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <!-- css -->
-    <link rel="stylesheet" href="../css/mainStyle.css" />
-    <link rel="stylesheet" href="../css/contactoStyle.css" />
     <!-- boostrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -17,6 +23,8 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/mainStyle.css" />
     <!-- fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -39,22 +47,22 @@
       referrerpolicy="no-referrer"
     />
 
-    <title>Centenial Soft</title>
+    <title>Centenial Soft | Contacto</title>
   </head>
   <body>
-    <div id="landscape">
+    <!-- <div id="landscape">
       <div>
         <img src="../img/girar-movil.png" alt="" class="img-fluid" />
         <p>!Gira el Movil!</p>
       </div>
-    </div>
+    </div> -->
 
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container g-0">
-          <img src="../img/logo.png" alt="Logo" />
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-lg">
+          <img src="../img/logo/logo.svg" alt="Logo Empresa" />
           <button
-            class="navbar-toggler navbar-toggler-right"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -62,7 +70,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="fa-sharp fa-solid fa-bars"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
@@ -73,16 +81,18 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="html/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="precios.html">Precios</a>
+                <a class="nav-link" href="../html/precios.html">Precios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="galeria.html">Galeria</a>
+                <a class="nav-link" href="../html/galeria.html">Galeria</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="../html/contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -91,7 +101,7 @@
     </header>
 
     <main>
-      <section class="jumbo jumbo--height">
+      <section class="jumbo jumbo--height --jumbo-img-v2">
         <div class="jumbo__cont">
           <h1 class="text-center title__h1 mx-3 mb-5">Contacto</h1>
           <h2 class="text-center title__duo">HOME <span>/ CONTACTO</span></h2>
@@ -193,13 +203,13 @@
 
     <footer>
       <div class="container-fluid footer__top">
-        <div class="container">
+        <div class="container-fluid-lg">
           <div class="row">
-            <div class="col-12">
+            <div class="footer__top__desc col-12">
               <div class="footer__img pgt-60 pgb-30">
                 <img src="../img/logoF.png" alt="logo" class="img-fluid" />
               </div>
-              <p class="parragraf col-12">
+              <p class="parragraf text-center col-12">
                 Nuestra empresa desarrolla software de alta calidad y
                 confiabilidad para las necesidades corporativas desde 2018.
                 Somos reconocidos profesionales del desarrollo de software.
@@ -208,16 +218,14 @@
           </div>
         </div>
         <div class="container-fluid footer__inf">
-          <div class="container">
+          <div class="container-fluid-lg">
             <div class="row">
               <div class="footer__botom mt-5 col-12 col-md-6">
                 <div class="footer__item d-flex">
-                  <div class="footer__item__title col-4">
+                  <div class="col-4">
                     <h5>DIRECCION</h5>
                   </div>
-                  <p class="footer__title_parragraf col-8">
-                    Verbenas 348, Villa Nueva, Cordoba.
-                  </p>
+                  <p class="col-8">Verbenas 348, Villa Nueva, Cordoba.</p>
                 </div>
 
                 <div class="footer__item d-flex">

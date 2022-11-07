@@ -1,0 +1,41 @@
+.jumbo {
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .jumbo__cont {
+    width: 100%;
+  }
+}
+.--jumbo-img-v1 {
+  background-image: url($img-jumbo-v1);
+}
+.--jumbo-img-v2 {
+  background-image: url($img-jumbo-v2);
+}
+.jumbo--height {
+  height: 40vh;
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (orientation: portrait) {
+  .jumbo {
+    .jumbo__cont {
+      .parragraf {
+        margin-left: 20% !important;
+        margin-right: 20% !important;
+      }
+    }
+  }
+}
+/* TABLETS */
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1024px) {
+}
+/* PANTALLAS GRANDES */

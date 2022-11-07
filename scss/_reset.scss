@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  max-width: 2048px;
+  scroll-behavior: smooth;
+  font-family: $font-princ;
+}
+ul {
+  list-style: none;
+}
+a:link,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+img,
+svg {
+  vertical-align: middle;
+}

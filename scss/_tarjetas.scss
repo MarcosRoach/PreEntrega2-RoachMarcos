@@ -1,0 +1,246 @@
+.card__shadow {
+  padding: 40px 10px;
+  box-shadow: 0 0 13px -4px $color-shadow;
+  border: none;
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  hr {
+    width: 70px;
+    margin: 20px auto;
+    border-top: 2px solid $color-lightGray;
+  }
+}
+.card__cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__bg__icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 50px 30px;
+  border-color: transparent transparent $color-bgIcon transparent;
+  margin: auto;
+  transform: rotate(20deg);
+  transition: all 0.3s ease;
+}
+.card__icon {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 55px;
+  left: 44%;
+  margin: auto;
+}
+
+.card__team {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+
+  img {
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+  }
+
+  .card__team__overlay {
+    position: absolute;
+    background-color: $color-black-50;
+    bottom: 20px;
+    padding: 20px 0 20px 10px;
+    color: $color-white;
+    overflow: hidden;
+    width: 65%;
+    transition: all 0.3s ease;
+
+    h4 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      padding-left: 10px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      padding-left: 10px;
+      font-weight: 500;
+    }
+  }
+}
+.opinion__card {
+  .opinion__card__paragraph {
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: justify;
+    color: $color-gray;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: $color-gray;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $color-princ;
+  }
+  .opinion__card__paragraph::before {
+    display: block;
+    text-align: left;
+    top: 400px;
+    content: '"';
+    font-size: 6rem;
+    color: $color-princ;
+    font-weight: 400;
+    font-family: $font-alt;
+    line-height: 3px;
+  }
+  .opinion__card__paragraph::after {
+    display: block;
+    text-align: right;
+    top: 4px;
+    content: '"';
+    font-size: 6rem;
+    color: $color-princ;
+    font-weight: 400;
+    font-family: $font-alt;
+  }
+}
+
+.prices__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  box-shadow: 0 0 13px -4px $color-shadow;
+  border-radius: 10px;
+
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .prices__card__divider {
+    font-size: 0;
+    line-height: 0;
+    height: 1px;
+    width: 100%;
+    background: $color-lightGray;
+    margin: 35px 0;
+  }
+
+  .prices__card__list {
+    padding-bottom: 35px;
+
+    li {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-indent: -25px;
+      padding-left: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $color-lightGray;
+    }
+    li::before {
+      position: relative;
+      display: inline-block;
+      font-family: "FontAwesome";
+      content: "\f00c";
+      left: 0;
+      top: 0;
+      font-size: 1.4rem;
+      color: $color-lightGray;
+    }
+    .--active {
+      color: $color-darkGray;
+    }
+
+    li.--active::before {
+      color: $color-princ;
+    }
+  }
+
+  .prices__card__button {
+    background-color: $color-lightGray;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  .prices__card__button__a {
+    color: $color-black;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (orientation: portrait) {
+  .card__shadow {
+    min-height: 310px;
+  }
+}
+/* TABLETS */
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1024px) {
+  .card__shadow {
+    min-height: 280px;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 20px -4px $color-black-30;
+    }
+    &:hover > .card__cont > .card__bg__icon {
+      transform: rotate(0deg);
+    }
+    &:hover > .card__cont > .title__h3 {
+      color: $color-princ;
+    }
+  }
+
+  .team {
+    .card__team {
+      &:hover > img {
+        cursor: pointer;
+        filter: grayscale(0);
+      }
+      &:hover > .card__team__overlay {
+        width: 75%;
+      }
+    }
+  }
+
+  .prices__card {
+    .prices__card__button:hover {
+      cursor: pointer;
+      background-color: #7e42ff;
+    }
+    .prices__card__button:hover > .prices__card__button__a {
+      color: white;
+    }
+  }
+}
+/* PANTALLAS GRANDES */
